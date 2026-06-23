@@ -4,59 +4,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Engr. Fahim Hossain | Electrical Engineer</title>
+<title>Engr. Fahim Hossain</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f5f7fa;
+    font-family:Segoe UI, sans-serif;
+    display:flex;
+    background:#f4f6f9;
     color:#333;
 }
 
-header{
-    background:#0d1b2a;
+/* Sidebar */
+.sidebar{
+    width:280px;
+    min-height:100vh;
+    background:#0f172a;
     color:white;
-    text-align:center;
-    padding:60px 20px;
+    position:fixed;
+    padding:30px;
 }
 
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:10px;
-    font-size:1.2rem;
-}
-
-nav{
-    background:#1b263b;
-    padding:15px;
+.profile{
     text-align:center;
 }
 
-nav a{
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.profile h2{
+    margin-bottom:5px;
+}
+
+.profile p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+.menu{
+    margin-top:40px;
+}
+
+.menu a{
+    display:block;
     color:white;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    padding:12px 0;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+/* Content */
+.content{
+    margin-left:280px;
+    width:100%;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:100px 50px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
 }
 
 section{
-    max-width:1100px;
-    margin:auto;
-    padding:50px 20px;
+    padding:60px 50px;
 }
 
-h2{
-    color:#0d1b2a;
-    margin-bottom:20px;
+.section-title{
+    margin-bottom:30px;
+    color:#0f172a;
 }
 
 .card{
@@ -64,7 +101,7 @@ h2{
     padding:25px;
     margin-bottom:20px;
     border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 .skills{
@@ -74,161 +111,162 @@ h2{
 }
 
 .skill{
-    background:#e9ecef;
+    background:#e2e8f0;
     padding:15px;
-    text-align:center;
     border-radius:8px;
+    text-align:center;
 }
 
-.project{
-    border-left:5px solid #0d1b2a;
+.timeline{
+    border-left:3px solid #1e3a8a;
+    padding-left:20px;
 }
 
-.blog{
-    border-left:5px solid #198754;
+.timeline-item{
+    margin-bottom:25px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#0f172a;
+    color:white;
 }
 
 .btn{
     display:inline-block;
-    background:#0d1b2a;
-    color:white;
     padding:12px 20px;
+    background:#2563eb;
+    color:white;
     text-decoration:none;
     border-radius:5px;
-    margin-top:10px;
-}
-
-footer{
-    background:#0d1b2a;
-    color:white;
-    text-align:center;
-    padding:25px;
+    margin-top:15px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Engr. Fahim Hossain</h1>
-    <p>
-        Electrical Engineer | Automotive Service Professional |
-        EV & Battery Technology Enthusiast
-    </p>
-</header>
+<div class="sidebar">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <div class="profile">
+        <img src="https://via.placeholder.com/140" alt="Profile">
+        <h2>Engr. Fahim Hossain</h2>
+        <p>Electrical Engineer</p>
+        <p>Automotive & EV Specialist</p>
+    </div>
 
-<section id="about">
-    <h2>About Me</h2>
-    <div class="card">
+    <div class="menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+<div class="content">
+
+    <div class="hero">
+        <h1>Hello, I'm Fahim</h1>
         <p>
-            I am an Electrical & Electronics Engineer with experience in
-            automotive aftersales service, workshop operations, customer
-            consultancy, executive coordination, and technical management.
-            My passion lies in EV technology, lithium-ion batteries,
-            automotive diagnostics, and engineering innovation.
+            Electrical Engineer | Automotive Service Professional |
+            EV & Battery Technology Enthusiast
         </p>
-    </div>
-</section>
 
-<section id="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="card">
-        <h3>Senior Executive (Coordinator to Executive Director)</h3>
-        <p>Automotive Service Industry</p>
-        <p>
-            Executive coordination, workshop operations, customer service,
-            process improvement, reporting, and strategic support.
-        </p>
+        <a href="#" class="btn">Download Resume</a>
     </div>
 
-    <div class="card">
-        <h3>Customer Service & Technical Support</h3>
-        <p>
-            Automotive and electronics service operations,
-            customer consultation, troubleshooting, and service advisory.
-        </p>
-    </div>
-</section>
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
 
-<section id="skills">
-    <h2>Technical Skills</h2>
+        <div class="card">
+            <p>
+                Experienced professional with a background in
+                Electrical & Electronics Engineering and automotive
+                service operations. Passionate about EV technology,
+                battery systems, workshop management and engineering innovation.
+            </p>
+        </div>
+    </section>
 
-    <div class="skills">
-        <div class="skill">Electrical Engineering</div>
-        <div class="skill">Automotive Diagnostics</div>
-        <div class="skill">Workshop Management</div>
-        <div class="skill">EV Technology</div>
-        <div class="skill">Battery Systems</div>
-        <div class="skill">Customer Service</div>
-        <div class="skill">MS Excel</div>
-        <div class="skill">MS Access</div>
-    </div>
-</section>
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
 
-<section id="projects">
-    <h2>Projects</h2>
+        <div class="timeline">
 
-    <div class="card project">
-        <h3>Automotive Workshop Database</h3>
-        <p>
-            Development of customer, vehicle, service,
-            quotation, and inventory management system.
-        </p>
-    </div>
+            <div class="timeline-item">
+                <h3>Senior Executive (Coordinator to Executive Director)</h3>
+                <p>Automotive Service Industry</p>
+            </div>
 
-    <div class="card project">
-        <h3>Workshop Process Improvement</h3>
-        <p>
-            Improving customer handling, service workflow,
-            and operational efficiency.
-        </p>
-    </div>
-</section>
+            <div class="timeline-item">
+                <h3>Customer Service & Technical Advisor</h3>
+                <p>Automotive Workshop Operations</p>
+            </div>
 
-<section id="blog">
-    <h2>Engineering Blog</h2>
+        </div>
+    </section>
 
-    <div class="card blog">
-        <h3>Understanding Lithium-Ion Batteries</h3>
-        <p>Coming Soon...</p>
-    </div>
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
 
-    <div class="card blog">
-        <h3>Hybrid Vehicle Technology Basics</h3>
-        <p>Coming Soon...</p>
-    </div>
+        <div class="skills">
+            <div class="skill">Electrical Engineering</div>
+            <div class="skill">EV Technology</div>
+            <div class="skill">Battery Systems</div>
+            <div class="skill">Automotive Diagnostics</div>
+            <div class="skill">Workshop Management</div>
+            <div class="skill">MS Excel</div>
+            <div class="skill">MS Access</div>
+            <div class="skill">Customer Service</div>
+        </div>
+    </section>
 
-    <div class="card blog">
-        <h3>Automotive Diagnostic Fundamentals</h3>
-        <p>Coming Soon...</p>
-    </div>
-</section>
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
 
-<section id="contact">
-    <h2>Contact</h2>
+        <div class="card">
+            <h3>Automotive Workshop Database</h3>
+            <p>Customer, vehicle and service management system.</p>
+        </div>
 
-    <div class="card">
-        <p>Email: engrfahimh@gmail.com</p>
-        <p>Email: engrfahimh@outlook.com</p>
-        
+        <div class="card">
+            <h3>Workshop Process Improvement</h3>
+            <p>Operational efficiency and customer service enhancement.</p>
+        </div>
+    </section>
 
-        <a class="btn" href="#">Download Resume</a>
-    </div>
-</section>
+    <section id="blog">
+        <h2 class="section-title">Engineering Blog</h2>
 
-<footer>
-    <p>© 2026 Engr. Fahim Hossain | All Rights Reserved</p>
-</footer>
+        <div class="card">
+            <h3>Lithium-Ion Battery Fundamentals</h3>
+            <p>Coming Soon...</p>
+        </div>
+
+        <div class="card">
+            <h3>Hybrid Vehicle Technology</h3>
+            <p>Coming Soon...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card">
+            <p>Email: your-email@example.com</p>
+            <p>LinkedIn: Your LinkedIn URL</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Engr. Fahim Hossain
+    </footer>
+
+</div>
 
 </body>
 </html>
